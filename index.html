@@ -12,16 +12,30 @@
 
     <header>
         <nav>
-            <div id="logo"><img src="img/logosf2.png" alt="logo" width="100px"></div>
-            <div id="enlaces">
-                <li>
-                    <a href="#">home</a>
-                    <a href="#">section 2</a>
-                    <a href="#">section 3</a>
-                    <a href="#">section 4</a>
-                </li>
+            <div class="row">
+                <div class="col-2 col-s-2">
+                    <a href="#"><img src="./img/logosf2.png" alt="Logo" width="120px"></a>
+                </div>
+                <div class="col-6 col-s-6">
+                    <form action=".">
+                        <label for="Search">Buscar producto:</label>
+                        <input type="search" id="gsearch" name="gsearch" placeholder="Productos, Marcas, Categorias, etc">
+                        <input type="submit" value="BUSCAR">
+                      </form>
+                </div>
+                <div class="col-2 col-s-2">
+                    <a  class="carrito" href=""><img src="./img/carrito.png" alt="carrito" width="70px"></a>
+                </div>
+                <div class="col-2 col-s-2">
+                     <a href=""><img src="./img/usuario.png" alt="usuario" width="60px"></a>
+                </div>
             </div>
-            
+            <div class="enlaces">
+                <a href="#">home</a>
+                <a href="#">section 2</a>
+                <a href="#">section 3</a>
+                <a href="#">section 4</a>
+            </div>
         </nav>
     </header>
 
@@ -30,13 +44,13 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide carrusel" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://images.pexels.com/photos/7796161/pexels-photo-7796161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="prod1">
+                <img src="./img/ft1.png" class="d-block w-100" alt="prod1">
               </div>
               <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/3737592/pexels-photo-3737592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="prod2">
+                <img src="./img/ft11.png" class="d-block w-100" alt="prod2">
               </div>
               <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/15569182/pexels-photo-15569182/free-photo-of-limpieza-de-la-piel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="prod3">
+                <img src="./img/ft3.png" class="d-block w-100" alt="prod3">
               </div>
             </div>
           </div>
