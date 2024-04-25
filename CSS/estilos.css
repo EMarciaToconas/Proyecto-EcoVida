@@ -1,3 +1,61 @@
+
+
+.navbar {
+    background-color: #CBDDB5;
+    color: white;
+    padding: 100px 200px;
+    margin-left:  5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar .logo img {
+    width: 120px;
+    height: auto;
+}
+
+.navbar form {
+    display: flex;
+    align-items: center;
+}
+
+.navbar form label {
+    margin-right: 10px;
+    color: white;
+}
+
+.navbar form input[type="search"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.navbar form input[type="submit"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.navbar .icon {
+            color: white;
+            text-decoration: none;
+            font-size: 40px; /* Ajusta el tamaño de los iconos */
+}
+
+.grupoIconos{
+    margin-right: 20%;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+
 header{
     margin-bottom: 5px;
     background-color: #CBDDB5;
@@ -30,10 +88,7 @@ header{
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
   }
-.row{
-    padding: 10px;
-    text-align: center;
-}
+
 .enlaces{
     background-color: #98b17a;
     text-align: center;
@@ -52,3 +107,21 @@ header{
 .carousel-item{
     height: 400px;
 }
+
+.icon{
+    display: flex;
+}
+
+.icon a{
+    text-decoration: none;
+    color: #98b17a;
+}
+.iconoGrande{
+    size: 150px;
+}
+
+.nav div{
+    display: flex;
+   align-items: center;
+}
+
