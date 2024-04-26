@@ -52,3 +52,21 @@ header{
 .carousel-item{
     height: 400px;
 }
+.categorias-productos {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "higiene-personal cuidado-de-la-piel cuidado-del-cabello decoracion limpieza-del-hogar";
+  }
+  
+  .higiene-personal { grid-area: higiene-personal; }
+  
+  .cuidado-de-la-piel { grid-area: cuidado-de-la-piel; }
+  
+  .cuidado-del-cabello { grid-area: cuidado-del-cabello; }
+  
+  .decoracion { grid-area: decoracion; }
+  
+  .limpieza-del-hogar { grid-area: limpieza-del-hogar; }
+  
