@@ -114,7 +114,7 @@ header{
 
 .icon a{
     text-decoration: none;
-    color: #98b17a;
+    color: #608334;
 }
 .iconoGrande{
     size: 150px;
@@ -123,5 +123,11 @@ header{
 .nav div{
     display: flex;
    align-items: center;
+}
+
+.titulo{
+
+    color: #608334;
+    margin-right: 15%;
 }
 
