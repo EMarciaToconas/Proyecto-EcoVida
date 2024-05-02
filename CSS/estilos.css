@@ -89,18 +89,18 @@ header{
     .col-12 {width: 100%;}
   }
 
-.enlaces{
+#enlaces{
     background-color: #98b17a;
     text-align: center;
 }
-.enlaces a{
+#enlaces a{
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
     text-decoration: none;
     padding: 10px;
 }
-.enlaces a:hover{
+#enlaces a:hover{
     background-color: #8acad2;
     color: black;
 }
@@ -133,7 +133,7 @@ header{
     grid-template-areas:
       "higiene-personal cuidado-de-la-piel cuidado-del-cabello decoracion limpieza-del-hogar";
 }
-  .CATEG{
+  #CATEG{
     background-color: #98b17a;
     color: #f2f2f2;
     text-align: center;
@@ -302,7 +302,23 @@ header{
     /*padding: 16px 32px;*/
 }
   
-.nosotros{
+#nosotros{
+    background-color: #98b17a;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 1%;
+    margin: 1% 0%;
+}
+
+.titulo {
+    text-align: center;
+}
+.texto {
+    text-align: justify;
+}
+
+#contacto{
     background-color: #98b17a;
     color: #f2f2f2;
     text-align: center;
