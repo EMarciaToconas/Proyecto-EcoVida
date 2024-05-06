@@ -104,37 +104,49 @@
     <section>
         <div id="CATEG">CATEGORIAS</div>
         <div class="categorias-productos">
-            <div class="higiene-personal">
+            <div class="higiene-personal" onclick="expandir('productoHigiene')">
                 <img src="./img/h-p.png" alt="higienep" class="img1">
                 <div class="textofondo1">
                     <div class="text01">HIGIENE PERSONAL</div>
                 </div>
             </div>
-            <div class="cuidado-de-la-piel">
+            <div class="cuidado-de-la-piel" onclick="expandir('productoPiel')">
                 <img src="./img/c-p.png" alt="cuidadop" class="img2">
                 <div class="textofondo1">
                     <div class="text02">CUIDADO DE LA PIEL</div>
                 </div>
             </div>
-            <div class="cuidado-del-cabello">
+            <div class="cuidado-del-cabello"onclick="expandir('productoCabello')">
                 <img src="./img/c-c.png" alt="cuidadoc" class="img3">
                 <div class="textofondo1">
                     <div class="text03">CUIDADO DEL CABELLO</div>
                 </div>
             </div>
-            <div class="decoracion">
+            <div class="decoracion" onclick="expandir('productoDecoHogar')">
                 <img src="./img/d-h.png" alt="decoracionh" class="img4">
                 <div class="textofondo1">
                     <div class="text04">DECORACIÓN PARA HOGAR</div>
                 </div>
             </div>
-            <div class="limpieza-del-hogar">
+            <div class="limpieza-del-hogar" onclick="expandir('productoLimpHogar')">
                 <img src="./img/L-h.png" alt="limpiezah" class="img5">
                 <div class="textofondo1">
                     <div class="text05">LIMPIEZA DEL HOGAR</div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!--sección donde se cargan las tarjetas-->
+    <section>
+        
+            <div class="productoHigiene oculto"> Cards de productos de higiene-personal</div>
+            <div class="productoPiel oculto">Cards de productos de Cuidados de la piel</div>
+            <div class="productoCabello oculto">Cards de productos de Cuidados del Cabello</div>
+            <div class="productoDecoHogar oculto">Cards de productos de Deco Hogar</div>
+            <div class="productoLimpHogar oculto">Cards de productos de Limpieza Hogar</div>
+        
+        
     </section>
 
     <section>
@@ -152,7 +164,7 @@
     <footer>
 
     </footer>
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

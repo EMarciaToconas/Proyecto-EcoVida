@@ -332,5 +332,37 @@ header{
     margin: 1% 0%;
 }
 
+.productoHigiene{
+    width: 100%;
+    background-color: brown;
+}
 
+.productoPiel{
+    width: 100%;
+    background-color: orange;
+}
 
+.productoCabello{
+    width: 100%;
+    background-color: green;
+}
+.productoDecoHogar{
+    width: 100%;
+    background-color: blue;
+}
+.productoLimpHogar{
+    width: 100%;
+    background-color: violet;
+}
+
+.oculto {
+    height: 0;
+    overflow: hidden; /* Evita que el contenido oculto se muestre */
+    transition: height 0.3s ease; /* Transición suave */
+}
+
+/* Estilo para mostrar los elementos */
+.mostrado {
+    height: 20em; /* Altura deseada */
+    transition: height 0.3s ease; /* Transición suave */
+}
