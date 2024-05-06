@@ -321,6 +321,7 @@ header{
 }
 .texto {
     text-align: justify;
+    margin: 5em;
 }
 
 #contacto{
@@ -365,4 +366,50 @@ header{
 .mostrado {
     height: 20em; /* Altura deseada */
     transition: height 0.3s ease; /* Transición suave */
+}
+
+form {
+
+    margin-bottom: 5em;
+}
+label, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"], textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #98b17a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    width: 100%;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.contact{
+    display:flex;
+    justify-content: center;
+}
+
+#textoContacto{
+    width: 50%;
+    
+}
+
+#contactForm{
+    width: 100%;
 }
