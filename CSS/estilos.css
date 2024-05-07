@@ -1,10 +1,8 @@
-
-
 .navbar {
     background-color: #CBDDB5;
     color: white;
     padding: 100px 200px;
-    margin-left:  5%;
+    margin-left: 5%;
     margin-right: 5%;
     display: flex;
     justify-content: space-between;
@@ -42,104 +40,186 @@
 }
 
 .navbar .icon {
-            color: white;
-            text-decoration: none;
-            font-size: 40px; /* Ajusta el tamaño de los iconos */
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    /* Ajusta el tamaño de los iconos */
 }
 
-.grupoIconos{
+.grupoIconos {
     margin-right: 20%;
 }
 
-.icon{
+.icon {
     display: flex;
     justify-content: space-between;
 }
 
-header{
+header {
     margin-bottom: 5px;
     background-color: #CBDDB5;
 }
-@media only screen and (min-width: 600px) { /* dispositivo de hasta 600px  */
-    .col-s-1 {width: 8.33%;}  
-    .col-s-2 {width: 16.66%;}   
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}   
-  }
-  @media only screen and (min-width: 768px) {  /* dispositivo de hasta 768px */
-    .col-1 {width: 8.33%;}  
-    .col-2 {width: 16.66%;} 
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
 
-#enlaces{
+@media only screen and (min-width: 600px) {
+
+    /* dispositivo de hasta 600px  */
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* dispositivo de hasta 768px */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+#enlaces {
     background-color: #98b17a;
     text-align: center;
 }
-#enlaces a{
+
+#enlaces a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
     text-decoration: none;
     padding: 10px;
 }
-#enlaces a:hover{
+
+#enlaces a:hover {
     background-color: #8acad2;
     color: black;
 }
-.carousel-item{
+
+.carousel-item {
     height: 400px;
 }
 
-.icon{
+.icon {
     display: flex;
 }
 
-.icon a{
+.icon a {
     text-decoration: none;
     color: #608334;
 }
-.iconoGrande{
+
+.iconoGrande {
     size: 150px;
 }
 
-.nav div{
+.nav div {
     display: flex;
-   align-items: center;
+    align-items: center;
 }
 
-.titulo1{
+.titulo1 {
 
     color: #608334;
     margin-right: 15%;
 }
 
-.categorias-productos {  
+.categorias-productos {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-      "higiene-personal cuidado-de-la-piel cuidado-del-cabello decoracion limpieza-del-hogar";
+        "higiene-personal cuidado-de-la-piel cuidado-del-cabello decoracion limpieza-del-hogar";
 }
-  #CATEG{
+
+#CATEG {
     background-color: #98b17a;
     color: #f2f2f2;
     text-align: center;
@@ -159,11 +239,12 @@ header{
 }
 
 .higiene-personal {
-    grid-area: higiene-personal; 
+    grid-area: higiene-personal;
     position: relative;
     width: 100%;
 }
-.higiene-personal img{
+
+.higiene-personal img {
     width: 80%;
     border: none;
     text-align: center;
@@ -174,56 +255,64 @@ header{
     /* -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;*/
 }
-.higiene-personal:hover .img1{
-    box-shadow: 0 12px 16px 0 rgba(0, 156, 177),0 17px 50px 0 rgba(0, 156, 177);
+
+.higiene-personal:hover .img1 {
+    box-shadow: 0 12px 16px 0 rgba(0, 156, 177), 0 17px 50px 0 rgba(0, 156, 177);
     opacity: 0.3;
 }
+
 .higiene-personal:hover .textofondo1 {
     opacity: 1;
 }
+
 .text01 {
     /*background-color: #8acad2;*/
     color: rgb(0, 0, 0);
     font-size: 16px;
     /*padding: 16px 32px;*/
 }
-  
+
 .cuidado-de-la-piel {
-    grid-area: cuidado-de-la-piel; 
+    grid-area: cuidado-de-la-piel;
     position: relative;
     width: 100%;
 }
-.cuidado-de-la-piel img{
+
+.cuidado-de-la-piel img {
     width: 80%;
     border: none;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     /*font-size: 16px;*/
-     cursor: pointer;
+    cursor: pointer;
     /* -webkit-transition-duration: 0.4s; 
      transition-duration: 0.4s;*/
 }
-.cuidado-de-la-piel:hover .img2{
-    box-shadow: 0 12px 16px 0 rgba(0, 156, 177),0 17px 50px 0 rgba(0, 156, 177);
+
+.cuidado-de-la-piel:hover .img2 {
+    box-shadow: 0 12px 16px 0 rgba(0, 156, 177), 0 17px 50px 0 rgba(0, 156, 177);
     opacity: 0.3;
 }
+
 .cuidado-de-la-piel:hover .textofondo1 {
     opacity: 1;
 }
+
 .text02 {
-   /* background-color: #8acad2;*/
+    /* background-color: #8acad2;*/
     color: rgb(0, 0, 0);
     font-size: 16px;
     /*padding: 16px 32px;*/
 }
 
 .cuidado-del-cabello {
-    grid-area: cuidado-del-cabello; 
+    grid-area: cuidado-del-cabello;
     position: relative;
     width: 100%;
 }
-.cuidado-del-cabello img{
+
+.cuidado-del-cabello img {
     width: 80%;
     border: none;
     text-align: center;
@@ -234,26 +323,30 @@ header{
     /* -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;*/
 }
-.cuidado-del-cabello:hover .img3{
-    box-shadow: 0 12px 16px 0 rgba(0, 156, 177),0 17px 50px 0 rgba(0, 156, 177);
+
+.cuidado-del-cabello:hover .img3 {
+    box-shadow: 0 12px 16px 0 rgba(0, 156, 177), 0 17px 50px 0 rgba(0, 156, 177);
     opacity: 0.3;
 }
+
 .cuidado-del-cabello:hover .textofondo1 {
     opacity: 1;
 }
+
 .text03 {
-   /* background-color: #8acad2;*/
+    /* background-color: #8acad2;*/
     color: rgb(0, 0, 0);
     font-size: 16px;
     /*padding: 16px 32px;*/
 }
-  
+
 .decoracion {
     grid-area: decoracion;
     position: relative;
-    width: 100%; 
+    width: 100%;
 }
-.decoracion img{
+
+.decoracion img {
     width: 80%;
     border: none;
     text-align: center;
@@ -264,15 +357,18 @@ header{
     /* -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;*/
 }
-.decoracion:hover .img4{
-    box-shadow: 0 12px 16px 0 rgba(0, 156, 177),0 17px 50px 0 rgba(0, 156, 177);
+
+.decoracion:hover .img4 {
+    box-shadow: 0 12px 16px 0 rgba(0, 156, 177), 0 17px 50px 0 rgba(0, 156, 177);
     opacity: 0.3;
 }
+
 .decoracion:hover .textofondo1 {
     opacity: 1;
 }
+
 .text04 {
-   /* background-color: #8acad2;*/
+    /* background-color: #8acad2;*/
     color: rgb(0, 0, 0);
     font-size: 16px;
     /*padding: 16px 32px;*/
@@ -281,9 +377,10 @@ header{
 .limpieza-del-hogar {
     grid-area: limpieza-del-hogar;
     position: relative;
-    width: 100%; 
+    width: 100%;
 }
-.limpieza-del-hogar img{
+
+.limpieza-del-hogar img {
     width: 80%;
     border: none;
     text-align: center;
@@ -294,21 +391,24 @@ header{
     /* -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;*/
 }
-.limpieza-del-hogar:hover .img5{
-    box-shadow: 0 12px 16px 0 rgba(0, 156, 177),0 17px 50px 0 rgba(0, 156, 177);
+
+.limpieza-del-hogar:hover .img5 {
+    box-shadow: 0 12px 16px 0 rgba(0, 156, 177), 0 17px 50px 0 rgba(0, 156, 177);
     opacity: 0.3;
 }
+
 .limpieza-del-hogar:hover .textofondo1 {
     opacity: 1;
 }
+
 .text05 {
-   /* background-color: #8acad2;*/
+    /* background-color: #8acad2;*/
     color: rgb(0, 0, 0);
     font-size: 16px;
     /*padding: 16px 32px;*/
 }
-  
-#nosotros{
+
+#nosotros {
     background-color: #98b17a;
     color: #f2f2f2;
     text-align: center;
@@ -316,15 +416,17 @@ header{
     padding: 1%;
     margin: 1% 0%;
 }
+
 .titulo2 {
     text-align: center;
 }
+
 .texto {
     text-align: justify;
     margin: 5em;
 }
 
-#contacto{
+#contacto {
     background-color: #98b17a;
     color: #f2f2f2;
     text-align: center;
@@ -333,50 +435,60 @@ header{
     margin: 1% 0%;
 }
 
-.productoHigiene{
+.productoHigiene {
     width: 100%;
     background-color: brown;
 }
 
-.productoPiel{
+.productoPiel {
     width: 100%;
     background-color: orange;
 }
 
-.productoCabello{
+.productoCabello {
     width: 100%;
     background-color: green;
 }
-.productoDecoHogar{
+
+.productoDecoHogar {
     width: 100%;
     background-color: blue;
 }
-.productoLimpHogar{
+
+.productoLimpHogar {
     width: 100%;
     background-color: violet;
 }
 
 .oculto {
     height: 0;
-    overflow: hidden; /* Evita que el contenido oculto se muestre */
-    transition: height 0.3s ease; /* Transición suave */
+    overflow: hidden;
+    /* Evita que el contenido oculto se muestre */
+    transition: height 0.3s ease;
+    /* Transición suave */
 }
 
 /* Estilo para mostrar los elementos */
 .mostrado {
-    height: 20em; /* Altura deseada */
-    transition: height 0.3s ease; /* Transición suave */
+    height: 20em;
+    /* Altura deseada */
+    transition: height 0.3s ease;
+    /* Transición suave */
 }
 
 form {
 
     margin-bottom: 5em;
 }
-label, textarea {
+
+label,
+textarea {
     display: block;
     margin-bottom: 10px;
 }
-input[type="text"], textarea {
+
+input[type="text"],
+textarea {
     margin-bottom: 10px;
     width: 100%;
     padding: 8px;
@@ -384,6 +496,7 @@ input[type="text"], textarea {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 input[type="submit"] {
     background-color: #98b17a;
     color: white;
@@ -392,24 +505,28 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 1em;
-    width: 100%;
+    width: 20%;
 }
+
 input[type="submit"]:hover {
-    background-color: #45a049;
+    color: black;
+    background-color: #8acad2;
     margin-top: 1em;
-    width: 100%;
+    width: 20%;
 }
 
-.contact{
-    display:flex;
+.contact {
+    display: flex;
     justify-content: center;
+    background-color: #f7feef;
 }
 
-#textoContacto{
+#textoContacto {
     width: 50%;
-    
+    padding: 2% 5% 5%
 }
 
-#contactForm{
+#contactForm {
     width: 100%;
+    padding-top: 5%;
 }
