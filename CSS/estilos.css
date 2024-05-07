@@ -437,28 +437,26 @@ header {
 
 .productoHigiene {
     width: 100%;
-    background-color: brown;
 }
 
 .productoPiel {
     width: 100%;
-    background-color: orange;
 }
 
 .productoCabello {
     width: 100%;
-    background-color: green;
+
 }
 
 .productoDecoHogar {
     width: 100%;
-    background-color: blue;
+
 }
 
 .productoLimpHogar {
     width: 100%;
-    background-color: violet;
 }
+
 
 .oculto {
     height: 0;
@@ -470,7 +468,8 @@ header {
 
 /* Estilo para mostrar los elementos */
 .mostrado {
-    height: 20em;
+    padding-top: 3em;
+    height: 40em;
     /* Altura deseada */
     transition: height 0.3s ease;
     /* Transición suave */
