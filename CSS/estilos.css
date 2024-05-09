@@ -462,7 +462,7 @@ header {
     height: 0;
     overflow: hidden;
     /* Evita que el contenido oculto se muestre */
-    transition: height 0.3s ease;
+    transition: height 0.03s ease;
     /* Transición suave */
 }
 
@@ -471,7 +471,7 @@ header {
     padding-top: 3em;
     height: 40em;
     /* Altura deseada */
-    transition: height 0.3s ease;
+    transition: height 0.15s ease;
     /* Transición suave */
 }
 
