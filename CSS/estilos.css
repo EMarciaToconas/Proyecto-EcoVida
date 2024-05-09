@@ -529,3 +529,62 @@ input[type="submit"]:hover {
     width: 100%;
     padding-top: 5%;
 }
+
+.usuarioform {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "iniciodesesion registro";
+}
+
+#iniciodesesion {
+    grid-area: iniciodesesion;
+    position: relative;
+    width: 100%;
+}
+
+#registro {
+    grid-area: registro;
+    position: relative;
+    width: 100%;
+    
+}
+
+#inicioform {
+    border: none;
+    text-align: center;
+    margin: 5%;
+}
+
+#registroform {
+    border: none;
+    text-align: center;
+    margin: 5%;
+}
+.navusuario {
+    padding: 2%;
+}
+
+#inicio a{
+    text-decoration: none;
+    background-color: #98b17a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1%;
+    width: 20%;
+}
+
+#inicio a:hover {
+    color: black;
+    background-color: #8acad2;
+    margin-top: 1em;
+    width: 20%;
+}
+
+
+
