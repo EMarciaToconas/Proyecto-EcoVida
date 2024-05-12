@@ -32,11 +32,13 @@
 }
 
 .navbar form input[type="submit"] {
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
+    width: 20%;
     border: none;
     background-color: #ddd;
     cursor: pointer;
+    margin: auto;
 }
 
 .navbar .icon {
@@ -183,7 +185,8 @@ header {
 }
 
 .carousel-item {
-    height: 400px;
+    height: 100%;
+    width: fit-content;
 }
 
 .icon {
@@ -419,11 +422,22 @@ header {
 
 .titulo2 {
     text-align: center;
+    padding-top: 2%;
 }
 
 .texto {
     text-align: justify;
-    margin: 5em;
+    margin: 2%;
+    font-size: 18px;
+
+}
+
+#logo2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
 #contacto {
@@ -549,7 +563,7 @@ input[type="submit"]:hover {
     grid-area: registro;
     position: relative;
     width: 100%;
-    
+
 }
 
 #inicioform {
@@ -563,11 +577,12 @@ input[type="submit"]:hover {
     text-align: center;
     margin: 5%;
 }
+
 .navusuario {
     padding: 2%;
 }
 
-#inicio a{
+#inicio a {
     text-decoration: none;
     background-color: #98b17a;
     color: white;
@@ -585,6 +600,3 @@ input[type="submit"]:hover {
     margin-top: 1em;
     width: 20%;
 }
-
-
-
