@@ -1,52 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoVida Market</title>
-    <link rel="icon" href="./img/logo2sf.png">
     <link rel="stylesheet" href="./CSS/estilos.css">
     <!--favicon-->
     <link rel="shortcut icon" href="./img/favicon-sinfondo.png" type="image/x-icon">
 </head>
+
 <body>
     <header>
-            <!-- Logo y titulo -->
-            <div class="headerusu">
 
-                <div class="logo">
-                    <a href="#"><img src="./img/logo-oscuro-sinfondo.png" alt="Logo"></a>
-                </div>
-
-                <div class="titulo1">
-                    <h2>EcoVida Market</h2>
-                </div>
-
-            </div>
+        <div class="logosesion">
+            <a href="index.html"><img src="./img/logo-oscuro-sinfondo.png" alt="Logo" width="10%"></a>
+        </div>
     </header>
     <main>
         <div class="usuarioform">
 
             <!-- Formulario de inicio de sesión -->
-            <div class="iniciodesesion" >
-                <p>Si ya te has creado una cuenta puedes iniciar sesión aquí:</p>
+
+            <div class="iniciodesesion">
+                <h2 id="titulo3">Inicio de sesión</h2>
+                <p id="pregunta">Si ya tienes una cuenta, puedes iniciar sesión aquí:</p>
+                <br>
                 <form id="inicioform">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre de Usuario">
-                    <br>
-                    <input type="text" name="email" id="email" placeholder="E-mail">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre de Usuario" size="50">
                     <br>
                     <input type="pass" name="clave" id="clave" placeholder="Contraseña">
                     <br>
-                    <input type="checkbox" name="acepta" id="acepta">Aceptar Términos y Condiciones
-                    <br>
                     <input id="submit" type="submit" value="Iniciar Sesión">
-                </form> 
+                </form>
             </div>
 
             <!-- Formulario de registro-->
             <div class="registro">
-                <p>¿Aún no cuentas con un usuario? puedes crearte uno aquí:</p>
+                <h2 id="titulo3">Registro</h2>
+                <p id="pregunta">¿Aún no cuentas con un usuario? Puedes crearte uno aquí:</p>
+                <br>
                 <form id="registroform">
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                     <br>
@@ -57,7 +50,7 @@
                     <input type="text" name="nombreus" id="nombreus" placeholder="Nombre de usuario">
                     <br>
                     <input type="pass" name="clave" id="clave" placeholder="Establecer contraseña">
-                    <br>
+                    <br><br>
                     <input type="checkbox" name="acepta" id="acepta">Aceptar Términos y Condiciones
                     <br>
                     <input id="submit" type="submit" value="Registrarse">
@@ -67,14 +60,14 @@
 
         <!-- Botón para volver a la página principal -->
         <div class="volver">
-            <a href="index.html"> Volver al inicio </a>
+            <a href="index.html" id="volver"> Volver al inicio </a>
         </div>
-        
+
     </main>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi quis, neque eveniet numquam, minus, dolore suscipit maiores dolorum veniam doloribus accusantium vero corporis exercitationem? Incidunt distinctio voluptate consequatur at.</p>
     </footer>
-    
+
 </body>
+
 </html>

@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*Estilos del Header*/
 header {
     background-color: #CBDDB5;
@@ -8,7 +14,7 @@ header {
 .navbar {
     background-color: #CBDDB5;
     color: white;
-    padding: 10%x 20%;
+    padding: 10% 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,12 +22,12 @@ header {
 
 
 /*item1 logo*/
-.iniciologo{
+.iniciologo {
     display: flex;
     text-align: center;
     flex-direction: column;
     align-content: flex-start;
-    padding-left: 3%; 
+    padding-left: 3%;
 }
 
 .titulo1 {
@@ -51,17 +57,17 @@ header {
 .navbar input[type=search] {
     width: 100%;
     border: none;
-  }
+}
 
 /*botón de búsqueda*/
-  .navbar input[type=image] {
+.navbar input[type=image] {
     width: 30px;
     padding-left: 2px;
-  }
+}
 
 
 /*item3 Iconos de usuario y carrito*/
-  .navbar .icon {
+.navbar .icon {
     color: white;
     text-decoration: none;
     font-size: 50px;
@@ -112,62 +118,66 @@ header {
 
 /*Modificación del header para tablet/celular*/
 @media only screen and (max-width: 1000px) {
+
     /*item1 logo*/
-.iniciologo{
-    width: 50%;
-    order: 1;/*orden de item*/
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-content: flex-start;
-    padding-left: 5%; 
-}
+    .iniciologo {
+        width: 50%;
+        order: 1;
+        /*orden de item*/
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-content: flex-start;
+        padding-left: 5%;
+    }
 
-.titulo1 {
-    color: #608334;
-}
+    .titulo1 {
+        color: #608334;
+    }
 
-.logo img {
-    width: 100px;
-    height: auto;
-}
-
-
-/*item3 Iconos de usuario y carrito*/
-.navbar .icon {
-    order: 2;/**cambio de orden de item**/
-    color: white;
-    text-decoration: none;
-    font-size: 45px;
-    padding-right: 15%;
-    /* Ajusta el tamaño de los iconos */
-}
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
 
 
-/*item4 menú*/
-.enlaces {
-    order: 4;
-    width: 100%;
-    background-color: #98b17a;
-    text-align: center;
-    align-content: space-between;
-}
+    /*item3 Iconos de usuario y carrito*/
+    .navbar .icon {
+        order: 2;
+        /**cambio de orden de item**/
+        color: white;
+        text-decoration: none;
+        font-size: 45px;
+        padding-right: 15%;
+        /* Ajusta el tamaño de los iconos */
+    }
 
-/*item4 barra de busqueda*/
-.navbar .form1 {
-    order: 3; /*cambio de orden de item*/
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 2px solid #98b17a;
-    padding: 4px;
-    background-color: white;
-    margin-left: 5%;
-    margin-bottom: 2%;
-    margin-top: 1%;
-}
+
+    /*item4 menú*/
+    .enlaces {
+        order: 4;
+        width: 100%;
+        background-color: #98b17a;
+        text-align: center;
+        align-content: space-between;
+    }
+
+    /*item4 barra de busqueda*/
+    .navbar .form1 {
+        order: 3;
+        /*cambio de orden de item*/
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 2px solid #98b17a;
+        padding: 4px;
+        background-color: white;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        margin-top: 1%;
+    }
 }
 
 
@@ -327,7 +337,7 @@ header {
 
 /*item5*/
 .limpieza-del-hogar {
-    position: relative; 
+    position: relative;
 }
 
 .limpieza-del-hogar img {
@@ -367,25 +377,30 @@ header {
         position: relative;
         flex-wrap: wrap;
     }
+
     .higiene-personal {
         position: relative;
         width: 50%;
         margin-bottom: 2%
     }
+
     .cuidado-de-la-piel {
         position: relative;
         width: 50%;
         margin-bottom: 2%;
     }
+
     .cuidado-del-cabello {
         position: relative;
         width: 50%;
         margin-bottom: 2%;
     }
+
     .decoracion {
         position: relative;
         width: 50%;
     }
+
     .limpieza-del-hogar {
         position: relative;
         width: 50%;
@@ -451,9 +466,11 @@ header {
         align-content: center;
         position: relative;
     }
+
     .logonosotros img {
         width: 50%;
     }
+
     .logonosotros {
         position: relative;
         align-content: center;
@@ -540,11 +557,12 @@ input[type="submit"]:hover {
         justify-content: center;
         background-color: #f7feef;
     }
+
     #textoContacto {
         width: 100%;
-        padding: 2% 
+        padding: 2%
     }
-    
+
     #contactForm {
         width: 90%;
         padding-top: 1%;
@@ -553,10 +571,42 @@ input[type="submit"]:hover {
         margin-bottom: 1%;
     }
 }
-footer {
-    background-color: #CBDDB5;
-    padding: 2%;
+
+.logosesion {
+    height: 40%;
+    padding: 1%;
+    margin-left: 2%;
 }
-footer p {
-    color: rgb(0, 0, 0);
+
+#titulo3 {
+    text-align: center;
+    color: #608334;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+#inicioform {
+    margin-left: auto;
+    margin-right: auto;
+    width: min-content;
+}
+
+#submit {
+    width: max-content;
+}
+
+#registroform {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#pregunta {
+    text-align: center;
+}
+
+
+#volver {
+    text-decoration: none;
+    color: #608334;
 }
