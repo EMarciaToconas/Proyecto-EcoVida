@@ -20,6 +20,16 @@ header {
     align-items: center;
 }
 
+.footer {
+    background-color: #CBDDB5;
+    color: white;
+    padding: 10% 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
 
 /*item1 logo*/
 .iniciologo {
