@@ -65,7 +65,26 @@
 
     <main>
         <section>
-            <!--cards-->
+            <div id="app">
+
+                <div v-for="elemento in datos">
+
+                    <!--aquí habría que colocar la condición del v-if para filtrar por categoría-->
+                        <div class="card">
+                            <img :src="elemento.foto" alt="Producto">
+                            <div class="card-body">
+                                <h2 class="card-title">{{elemento.producto}}</h2>
+                                <h3 class="card-category">{{elemento.categoría}}</h3>
+                                <p class="card-text">{{elemento.descripcion}}</p>
+                                <p class="price">${{elemento.precio}}</p>
+                                <a href="#" class="button">Comprar Ahora</a>
+                            </div>
+                        </div>
+                </div>
+
+
+            </div>
+
         </section>
 
         <section>
@@ -74,40 +93,51 @@
             <!-- Cajas de categorias -->
             <div class="categorias-productos">
 
-                <div class="higiene-personal"><!--item1-->
-                    <a href="higieneper.html"><img src="./img/categorias/h-p.png" alt="higienep" class="img1"></a>
-                    <div class="textofondo1">
-                        <div class="text01"><b>HIGIENE PERSONAL</b></div>
+                <a href="higieneper.html">
+                    <div class="higiene-personal"><!--item1-->
+                        <img src="./img/categorias/h-p.png" alt="higienep" class="img1">
+                        <div class="textofondo1">
+                            <div class="text01"><b>HIGIENE PERSONAL</b></div>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="cuidado-de-la-piel"><!--item2-->
-                    <img src="./img/categorias/c-p.png" alt="cuidadop" class="img2">
-                    <div class="textofondo1">
-                        <div class="text02"><b>CUIDADO DE LA PIEL</b></div>
+                <a href="cuidadopiel.html">
+                    <div class="cuidado-de-la-piel"><!--item2-->
+                        <img src="./img/categorias/c-p.png" alt="cuidadop" class="img2">
+                        <div class="textofondo1">
+                            <div class="text02"><b>CUIDADO DE LA PIEL</b></div>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="cuidado-del-cabello"><!--item3-->
-                    <img src="./img/categorias/cabello.png" alt="cuidadoc" class="img3">
-                    <div class="textofondo1">
-                        <div class="text03"><b>CUIDADO DEL CABELLO</b></div>
+                <a href="cuidadocabello.html">
+                    <div class="cuidado-del-cabello"><!--item3-->
+                        <img src="./img/categorias/cabello.png" alt="cuidadoc" class="img3">
+                        <div class="textofondo1">
+                            <div class="text03"><b>CUIDADO DEL CABELLO</b></div>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="decoracion"><!--item4-->
-                    <img src="./img/categorias/d-h.png" alt="decoracionh" class="img4">
-                    <div class="textofondo1">
-                        <div class="text04"><b>DECORACIÓN PARA HOGAR</b></div>
-                    </div>
-                </div>
 
-                <div class="limpieza-del-hogar"><!--item5-->
-                    <img src="./img/categorias/L-h.png" alt="limpiezah" class="img5">
-                    <div class="textofondo1">
-                        <div class="text05"><b>LIMPIEZA DEL HOGAR</b></div>
+                <a href="decohogar.html">
+                    <div class="decoracion"><!--item4-->
+                        <img src="./img/categorias/d-h.png" alt="decoracionh" class="img4">
+                        <div class="textofondo1">
+                            <div class="text04"><b>DECORACIÓN PARA HOGAR</b></div>
+                        </div>
                     </div>
-                </div>
+                </a>
+
+                <a href="limphogar.html">
+                    <div class="limpieza-del-hogar"><!--item5-->
+                        <img src="./img/categorias/L-h.png" alt="limpiezah" class="img5">
+                        <div class="textofondo1">
+                            <div class="text05"><b>LIMPIEZA DEL HOGAR</b></div>
+                        </div>
+                    </div>
+                </a>
 
             </div>
         </section>
@@ -117,9 +147,11 @@
 
         </footer>
 
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+            </script>
 
 </body>
 
