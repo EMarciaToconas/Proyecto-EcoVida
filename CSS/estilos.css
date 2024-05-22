@@ -20,17 +20,6 @@ header {
     align-items: center;
 }
 
-.footer {
-    background-color: #CBDDB5;
-    color: white;
-    padding: 10% 20%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5%;
-}
-
-
 /*item1 logo*/
 .iniciologo {
     display: flex;
@@ -125,6 +114,45 @@ header {
     background-color: #8acad2;
     color: black;
 }
+
+.categorias {
+    background-color: #98b17a;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .enlaces1 {
+    position: relative;
+    display: inline-block;
+    background-color: #98b17a;
+  }
+.categorias-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .categorias-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .categorias-content a:hover {background-color: #f1f1f1}
+  
+  .enlaces1:hover .categorias-content {
+    display: block;
+  }
+  
+  .enlaces1:hover .categorias {
+    background-color: #8acad2;
+    color: black;
+  }
 
 /*Modificación del header para tablet/celular*/
 @media only screen and (max-width: 1000px) {
@@ -583,6 +611,7 @@ input[type="submit"]:hover {
 }
 
 .logosesion {
+    text-align: center;
     height: 40%;
     padding: 1%;
     margin-left: 2%;
@@ -618,7 +647,22 @@ input[type="submit"]:hover {
 
 #volver {
     text-decoration: none;
-    color: #608334;
+    text-align: center;
+    background-color: #98b17a;
+    color: white;
+    padding: 1%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1%;
+    width: 20%;
+}
+
+#volver:hover {
+    color: black;
+    background-color: #8acad2;
+    width: 20%;
+    margin: 1%;
 }
 
 
@@ -628,20 +672,24 @@ input[type="submit"]:hover {
 .card {
     border: 1px solid #dee2e6;
     border-radius: 10px;
-    width: 300px;
+    width: 50%;
+    margin: 1%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #fff;
     overflow: hidden;
     transition: transform 0.3s;
 }
 .card:hover {
+    position: relative;
     transform: scale(1.05);
 }
 .card img {
+    position: relative;
     width: 100%;
     height: auto;
 }
 .card-body {
+    position: relative;
     padding: 15px;
 }
 .card-title {
@@ -676,4 +724,37 @@ input[type="submit"]:hover {
 }
 .button:hover {
     background-color: #0056b3;
+}
+
+/*estilos del footer*/
+footer{
+    background-color: #444444;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+.textof{
+    color: #ffffff;
+}
+
+.textof a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.logosf {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.logosf .imgin{
+    width: 30%;
+}
+.logosf .imgpin{
+    width: 30%;
+}
+.logosf .imgwpp{
+    width: 30%;
 }
