@@ -5,7 +5,7 @@
         "descripcion": "Preparado con una mezcla de aceite de semilla de uva y aceite de argán.",
         "precio": 1800,
         "categoría": "Cuidado del cabello",
-        "foto": "https://i.ibb.co/RPyHHkZ/aceite-reparador.png"
+        "foto": "./img/cdc/aceite-reparador.webp"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "descripcion": "Hidrata y suaviza. Para todo tipo de cabello. ",
         "precio": 1300,
         "categoría": "Cuidado del cabello",
-        "foto": "https://i.ibb.co/2SBY9Dz/acondicionador.png"
+        "foto": "./img/cdc/acondicionador.webp"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "descripcion": "Ideal para pelo graso gracias a su efecto astringente.",
         "precio": 3000,
         "categoría": "Cuidado del cabello",
-        "foto": "https://i.ibb.co/3MtXxwD/acite-arbol-de-te.png"
+        "foto": "./img/cdc/acite-arbol-de-te.webp"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "descripcion": "Tratamiento para cabellos dañados.",
         "precio": 2200,
         "categoría": "Cuidado del cabello",
-        "foto": "https://i.ibb.co/r0PX7F2/aceite.png"
+        "foto": "./img/cdc/aceite.webp"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "descripcion": "Sus cerdas de madera estimulan el cuero cabelludo y evitan la estática. Ideal para cabello rizado.",
         "precio": 4800,
         "categoría": "Cuidado del cabello",
-        "foto": "https://i.ibb.co/D9CK9W3/cepillo1.png"
+        "foto": "./img/cdc/cepillo1.webp"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "descripcion": "Compacto y cómodo, de tamaño pequeño para llevar en tu bolso.",
         "precio": 2500,
         "categoría": "Cuidado del cabello",
-        "foto": "https://i.ibb.co/t3R2ddN/peine.png"
+        "foto": "./img/cdc/peine.webp"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "descripcion": "Contiene crema para peinar, spray protector térmico y aceite hidratante.",
         "precio": 7000,
         "categoría": "Cuidado del cabello",
-        "foto": "https://i.ibb.co/7Kn0HnV/lociones.png"
+        "foto": "./img/cdc/lociones.webp"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "descripcion": "Con mango de madera y cerdas de acero inoxidable.",
         "precio": 2550,
         "categoría": "Cuidado del cabello",
-        "foto": "https://i.ibb.co/BZp8qYm/cepillo.png"
+        "foto": "./img/cdc/cepillo.webp"
     },
     {
         "id": 9,
@@ -69,15 +69,15 @@
         "descripcion": "Producto artesanal, sin siliconas ni parabenos. Para todo tipo de cabello.",
         "precio": 5000,
         "categoría": "Cuidado del cabello",
-        "foto": "https://i.ibb.co/vsntynh/shampoo-solido.png"
+        "foto": "./img/cdc/shampoo-solido.webp"
     },
     {
         "id": 10,
         "producto": "Aceite de coco",
         "descripcion": "Orgánico, 100% natural. Envase de 200 ml.",
         "precio": 3800,
-        "categoría": "Cuidado del cabello",
-        "foto": "https://i.ibb.co/pwgCN9L/aceite-de-coco.png"
+        "categoría": "Cuidado de la piel",
+        "foto": "./img/cdp/aceite de coco.webp"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "descripcion": "Crema facial fabricada con ingredientes naturales. Apta para veganos.",
         "precio": 20500,
         "categoría": "Cuidado de la piel",
-        "foto": "https://i.ibb.co/XSWBfWH/crema-hidratante.png"
+        "foto": "./img/cdp/crema-hidratante.webp"
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "descripcion": "Crema facial nocturna humectante. Ideal para pieles secas o maduras.",
         "precio": 30000,
         "categoría": "Cuidado de la piel",
-        "foto": "https://i.ibb.co/Y34L78P/crema-nocturna-intensiva.png"
+        "foto": "./img/cdp/crema nocturna intensiva.webp"
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "descripcion": "Producto 100% natural, hecho a base de aceites vegetales.",
         "precio": 1800,
         "categoría": "Cuidado de la piel",
-        "foto": "https://i.ibb.co/WDzBTSW/aceite-corporal.png"
+        "foto": "./img/cdp/aceite corporal.webp"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "descripcion": "Con microgránulos limpiadores y extracto de maracuyá.",
         "precio": 2430,
         "categoría": "Cuidado de la piel",
-        "foto": "https://i.ibb.co/VL49j2r/exfoliante-facial.png"
+        "foto": "./img/cdp/exfoliante facial.webp"
     },
     {
         "id": 15,
@@ -117,7 +117,7 @@
         "descripcion": "Preparado con agua de rosas. Revitalizador.",
         "precio": 2300,
         "categoría": "Cuidado de la piel",
-        "foto": "https://i.ibb.co/sH8mp4b/serum.png"
+        "foto": "./img/cdp/serum.webp"
     },
     {
         "id": 16,
@@ -125,7 +125,7 @@
         "descripcion": "Gel de limpieza para todo tipo de piel.",
         "precio": 1800,
         "categoría": "Cuidado de la piel",
-        "foto": "https://i.ibb.co/3Wh4dzM/gel-de-limpieza-facial.png"
+        "foto": "./img/cdp/gel de limpieza facial.webp"
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "descripcion": "Pack de discos desmaquillantes de algodón. Contiene 20 unidades.",
         "precio": 800,
         "categoría": "Cuidado de la piel",
-        "foto": "https://i.ibb.co/5ss6X9y/pads.png"
+        "foto": "./img/cdp/pads.webp"
     },
     {
         "id": 18,
@@ -141,15 +141,15 @@
         "descripcion": "Contiene loción desmaquillante y crema liviana hidratante. Productos veganos.",
         "precio": 10500,
         "categoría": "Cuidado de la piel",
-        "foto": "https://i.ibb.co/zfZqnXD/limpiadores.png"
+        "foto": "./img/cdp/limpiadores.webp"
     },
     {
         "id": 19,
-        "producto": "Adrono colgante",
+        "producto": "Adorno colgante",
         "descripcion": "Artesanal, fabricado con madera e hilo de algodón.",
         "precio": 1800,
         "categoría": "Decoración",
-        "foto": "https://i.ibb.co/J75h6DX/adorno-colgante.png"
+        "foto": "./img/decoracion/adorno colgante.webp"
     },
     {
         "id": 20,
@@ -157,7 +157,7 @@
         "descripcion": "Producto 100% natural, hecho a base de esencias florales.",
         "precio": 2200,
         "categoría": "Decoración",
-        "foto": "https://i.ibb.co/ww4wgg6/aromatizantes.png"
+        "foto": "./img/decoracion/aromatizantes.webp"
     },
     {
         "id": 21,
@@ -165,7 +165,7 @@
         "descripcion": "Artesanía tejida con materiales de excelente calidad.",
         "precio": 1800,
         "categoría": "Decoración",
-        "foto": "https://i.ibb.co/gwkSQFW/cesta.png"
+        "foto": "./img/decoracion/cesta.webp"
     },
     {
         "id": 23,
@@ -173,7 +173,7 @@
         "descripcion": "Vidrio resistente, con seguro de acero inoxidable.",
         "precio": 1200,
         "categoría": "Decoración",
-        "foto": "https://i.ibb.co/Mh0zq9s/frascos.jpg"
+        "foto": "./img/decoracion/frascos.webp"
     },
     {
         "id": 24,
@@ -181,7 +181,7 @@
         "descripcion": "Realizado en madera. Pintado a mano.",
         "precio": 700,
         "categoría": "Decoración",
-        "foto": "https://i.ibb.co/nPTQhpD/porta-sahumerio.png"
+        "foto": "./img/decoracion/porta-sahumerio.webp"
     },
     {
         "id": 25,
@@ -189,7 +189,7 @@
         "descripcion": "En forma de frasco. Realizado en cerámica.",
         "precio": 1800,
         "categoría": "Decoración",
-        "foto": "https://i.ibb.co/ZYr1FB1/porta-velas.png"
+        "foto": "./img/decoracion/porta-velas.webp"
     },
     {
         "id": 26,
@@ -197,7 +197,7 @@
         "descripcion": "Set de velas aromáticas de colores. Contiene 10 unidades.",
         "precio": 1300,
         "categoría": "Decoración",
-        "foto": "https://i.ibb.co/6wF87wJ/velas-aromaticas.png"
+        "foto": "./img/decoracion/velas aromaticas.webp"
     },
     {
         "id": 27,
@@ -205,7 +205,7 @@
         "descripcion": "Producto 100% natural y artesanal. Hecho a base de cera de abejas.",
         "precio": 500,
         "categoría": "Decoración",
-        "foto": "https://i.ibb.co/Y7NXMX1/velas.png"
+        "foto": "./img/decoracion/velas.webp"
     },
     {
         "id": 28,
@@ -213,7 +213,7 @@
         "descripcion": "Hecho con cáscara de coco tallada.",
         "precio": 1800,
         "categoría": "Decoración",
-        "foto": "https://i.ibb.co/DbWx0b2/bowl.png"
+        "foto": "./img/decoracion/bowl.webp"
     },
     {
         "id": 29,
@@ -221,7 +221,7 @@
         "descripcion": "De vidrio resistente. Distintos tamaños formas.",
         "precio": 2900,
         "categoría": "Decoración",
-        "foto": "https://i.ibb.co/Brn7RQR/floreros.png"
+        "foto": "./img/decoracion/floreros.webp"
     },
     {
         "id": 30,
@@ -229,7 +229,7 @@
         "descripcion": "Bolsa tejida que cumple la función de esponja brindando una suave exfoliación.",
         "precio": 850,
         "categoría": "Higiene personal",
-        "foto": "https://i.ibb.co/PctJVcq/bolsita-jabon.png"
+        "foto": "./img/hp/bolsita-jabon.webp"
     },
     {
         "id": 31,
@@ -237,7 +237,7 @@
         "descripcion": "Ecológicos, con mango de madera y cerdas suaves.",
         "precio": 2300,
         "categoría": "Higiene personal",
-        "foto": "https://i.ibb.co/vHPJCpM/cepillos-dientes.png"
+        "foto": "./img/hp/cepillos-dientes.webp"
     },
     {
         "id": 32,
@@ -245,7 +245,7 @@
         "descripcion": "De silicona. Reutilizable.",
         "precio": 10800,
         "categoría": "Higiene personal",
-        "foto": "https://i.ibb.co/M1P9q1N/copa-menst.png"
+        "foto": "./img/hp/copa menst.webp"
     },
     {
         "id": 33,
@@ -253,7 +253,7 @@
         "descripcion": "Maquinita ecológica de metal. Viene con 5 hojas de afeitar.",
         "precio": 2600,
         "categoría": "Higiene personal",
-        "foto": "https://i.ibb.co/f0j7Rwf/maquinita-de-afeitar.png"
+        "foto": "./img/hp/maquinita de afeitar.webp"
     },
     {
         "id": 34,
@@ -261,7 +261,7 @@
         "descripcion": "Hechos a base de aceites vegetales. Aptos para veganos",
         "precio": 1800,
         "categoría": "Higiene personal",
-        "foto": "https://i.ibb.co/Q6XxM2C/jabon-artesanal.png"
+        "foto": "./img/hp/jabon-artesanal.webp"
     },
     {
         "id": 35,
@@ -269,7 +269,7 @@
         "descripcion": "Hecha a base de bicarbonato de sodio, con agentes suavizantes y saborizantes naturales.",
         "precio": 1000,
         "categoría": "Higiene personal",
-        "foto": "https://i.ibb.co/PGkNbcW/pasta-dental.png"
+        "foto": "./img/hp/pasta-dental.webp"
     },
     {
         "id": 36,
@@ -277,7 +277,7 @@
         "descripcion": "Con cabo de madera. Contiene 50 unidades.",
         "precio": 1800,
         "categoría": "Higiene personal",
-        "foto": "https://i.ibb.co/3pvYnv1/hisopos.png"
+        "foto": "./img/hp/hisopos.webp"
     },
     {
         "id": 37,
@@ -285,7 +285,7 @@
         "descripcion": "Toallas higiénicas reutilizables, hechas con tela de algodón.",
         "precio": 4800,
         "categoría": "Higiene personal",
-        "foto": "https://i.ibb.co/3vXRLfd/toallas.png"
+        "foto": "./img/hp/toallas.webp"
     },
     {
         "id": 38,
@@ -293,7 +293,7 @@
         "descripcion": "Lufa natural, ideal para uso diario.",
         "precio": 660,
         "categoría": "Higiene personal",
-        "foto": "https://i.ibb.co/v1CCk7L/esponja.png"
+        "foto": "./img/hp/esponja.webp"
     },
     {
         "id": 39,
@@ -301,7 +301,7 @@
         "descripcion": "Para todo uso. Con tapita de metal.",
         "precio": 4000,
         "categoría": "Limpieza del hogar",
-        "foto": "https://i.ibb.co/xCgFq2d/botellas-de-vidrio.jpg"
+        "foto": "./img/Limpieza/botellas de vidrio.webp"
     },
     {
         "id": 40,
@@ -309,7 +309,7 @@
         "descripcion": "Hecho de madera, con cerdas de dureza media.",
         "precio": 5800,
         "categoría": "Limpieza del hogar",
-        "foto": "https://i.ibb.co/Kzd4M4J/cepillo.png"
+        "foto": "./img/Limpieza/cepillo.webp"
     },
        {
         "id": 41,
@@ -317,7 +317,7 @@
         "descripcion": "Bolsas ecológicas lavables y reutilizables.",
         "precio": 2000,
         "categoría": "Limpieza del hogar",
-        "foto": "https://i.ibb.co/BGctrJP/bolsas-de-tela.png"
+        "foto": "./img/Limpieza/bolsas de tela.webp"
     },
     {
         "id": 42,
@@ -325,7 +325,7 @@
         "descripcion": "Producto artesanal de excelente calidad y durabilidad.",
         "precio": 5800,
         "categoría": "Limpieza del hogar",
-        "foto": "https://i.ibb.co/xg4x8Vy/cesto-de-mimbre.png"
+        "foto": "./img/Limpieza/cesto de mimbre.webp"
     },
     {
         "id": 43,
@@ -333,7 +333,7 @@
         "descripcion": "Fabricado con microfibra. Con mango de madera",
         "precio": 4000,
         "categoría": "Limpieza del hogar",
-        "foto": "https://i.ibb.co/30dzB67/plumero.png"
+        "foto": "./img/Limpieza/plumero.webp"
     },
     {
         "id": 44,
@@ -341,7 +341,7 @@
         "descripcion": "Líquido para limpieza natural, con aroma cítrico.",
         "precio": 2100,
         "categoría": "Limpieza del hogar",
-        "foto": "https://i.ibb.co/PGZfFXs/limpiador-en-srpay.png"
+        "foto": "./img/Limpieza/limpiador en srpay.webp"
     },
     {
         "id": 45,
@@ -349,7 +349,7 @@
         "descripcion": "Escoba con mango de madera.",
         "precio": 6800,
         "categoría": "Limpieza del hogar",
-        "foto": "https://i.ibb.co/bHDJDtC/escoba.png"
+        "foto": "./img/Limpieza/escoba.webp"
     },
     {
         "id": 46,
@@ -357,7 +357,7 @@
         "descripcion": "Incluye cuchara, tenedor, sorbete y cepillito limpiador de sorbetes.",
         "precio": 4300,
         "categoría": "Limpieza del hogar",
-        "foto": "https://i.ibb.co/bKPDWpF/cubiertos.png"
+        "foto": "./img/Limpieza/cubiertos.webp"
     },
     {
         "id": 47,
@@ -365,6 +365,6 @@
         "descripcion": "Reutilizable. Viene con cepillito facilitar la limpieza.",
         "precio": 3800,
         "categoría": "Limpieza del hogar",
-        "foto": "https://i.ibb.co/TMTzhqs/sorbete.png"
+        "foto": "./img/Limpieza/sorbete.webp"
     }
 ]
