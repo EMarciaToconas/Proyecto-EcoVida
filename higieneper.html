@@ -75,21 +75,27 @@
     <main>
         <section>
             <div id="app">
-
-                <div v-for="elemento in datos">
-                    <div v-if="elemento.categoría === 'Higiene personal'"><!--aquí habría que colocar la condición del v-if para filtrar por categoría-->
-                        <div class="card">
-                            <img :src="elemento.foto" alt="Producto">
-                            <div class="card-body">
-                                <h2 class="card-title">{{elemento.producto}}</h2>
-                                <h3 class="card-category">{{elemento.categoría}}</h3>
-                                <p class="card-text">{{elemento.descripcion}}</p>
-                                <p class="price">${{elemento.precio}}</p>
-                                <a href="#" class="button">Comprar Ahora</a>
+                <div class="container">
+                    
+                        <div v-for="elemento in datos">
+                            <div class="col">
+                                <div v-if="elemento.categoría === 'Higiene personal'"><!--aquí habría que colocar la condición del v-if para filtrar por categoría-->
+                                    <div class="card">
+                                        <img :src="elemento.foto" alt="Producto">
+                                        <div class="card-body">
+                                            <h2 class="card-title">{{elemento.producto}}</h2>
+                                            <h3 class="card-category">{{elemento.categoría}}</h3>
+                                            <p class="card-text">{{elemento.descripcion}}</p>
+                                            <p class="price">${{elemento.precio}}</p>
+                                            <a href="#" class="button">Comprar Ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
+                
 
 
             </div>

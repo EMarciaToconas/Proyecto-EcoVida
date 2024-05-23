@@ -624,14 +624,18 @@ input[type="submit"]:hover {
     padding-bottom: 1%;
 }
 
-#inicioform {
-    margin-left: auto;
-    margin-right: auto;
-    width: min-content;
+.usuarioform {
+    width: 300px; /* Ancho deseado del formulario */
+        max-width: 100%; /* Ancho máximo para asegurarse de que no se extienda más allá */
+        margin: 0 auto; /* Centra el formulario horizontalmente */
 }
 
-#submit {
-    width: max-content;
+.usuarioform input[type="text"],
+.usuarioform input[type="password"],
+.usuarioform input[type="submit"] {
+    width: 100%; /* Ancho del 100% para los inputs y el botón */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    margin-bottom: 10px; /* Espacio entre los elementos */
 }
 
 #registroform {
@@ -670,9 +674,10 @@ input[type="submit"]:hover {
 /*cards*/
 
 .card {
+    
     border: 1px solid #dee2e6;
     border-radius: 10px;
-    width: 50%;
+    width: 25%;
     margin: 1%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #fff;
