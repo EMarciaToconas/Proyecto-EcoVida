@@ -25,7 +25,7 @@
             <div class="iniciologo"><!--item1-->
 
                 <div class="logo">
-                    <a href="#"><img src="./img/logo-oscuro-sinfondo.png" alt="Logo"></a>
+                    <a href="index.html"><img src="./img/logo-oscuro-sinfondo.png" alt="Logo"></a>
                 </div>
 
                 <div class="titulo1">
@@ -76,26 +76,27 @@
         <section>
             <div id="app">
                 <div class="container">
-                    
-                        <div v-for="elemento in datos">
-                            <div class="col">
-                                <div v-if="elemento.categoría === 'Higiene personal'"><!--aquí habría que colocar la condición del v-if para filtrar por categoría-->
-                                    <div class="card">
-                                        <img :src="elemento.foto" alt="Producto">
-                                        <div class="card-body">
-                                            <h2 class="card-title">{{elemento.producto}}</h2>
-                                            <h3 class="card-category">{{elemento.categoría}}</h3>
-                                            <p class="card-text">{{elemento.descripcion}}</p>
-                                            <p class="price">${{elemento.precio}}</p>
-                                            <a href="#" class="button">Comprar Ahora</a>
-                                        </div>
+
+                    <div v-for="elemento in datos">
+                        <div class="col">
+                            <div v-if="elemento.categoría === 'Higiene personal'">
+                                <!--aquí habría que colocar la condición del v-if para filtrar por categoría-->
+                                <div class="card">
+                                    <img :src="elemento.foto" alt="Producto">
+                                    <div class="card-body">
+                                        <h2 class="card-title">{{elemento.producto}}</h2>
+                                        <h3 class="card-category">{{elemento.categoría}}</h3>
+                                        <p class="card-text">{{elemento.descripcion}}</p>
+                                        <p class="price">${{elemento.precio}}</p>
+                                        <a href="#" class="button">Comprar Ahora</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
+                    </div>
+
                 </div>
-                
+
 
 
             </div>
@@ -107,13 +108,14 @@
                 <h3>INFORMACIÓN DE CONTACTO</h3>
                 <br>
                 <P>Argentina
-                <br><br>Envios a todo el país
-                <br><br>ecovidatienda@gmail.com</P>
+                    <br><br>Envios a todo el país
+                    <br><br>ecovidatienda@gmail.com
+                </P>
                 <a href="">Preguntas frecuentes</a>
                 <br><br>
                 <a href="">Términos y Condiciones</a>
             </div>
-            
+
             <div class="logosf">
                 <a href="">
                     <img src="./img/iconos/logoins.png" alt="logo instagram" class="imgin">
@@ -132,7 +134,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
             </script>
-
+    </main>
 </body>
 
 </html>
