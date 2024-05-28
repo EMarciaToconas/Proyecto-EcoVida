@@ -570,6 +570,14 @@ textarea {
     box-sizing: border-box;
 }
 
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+}
+
 input[type="submit"] {
     text-align: center;
     background-color: #98b17a;
