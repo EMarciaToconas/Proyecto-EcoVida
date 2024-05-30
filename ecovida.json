@@ -1,5 +1,32 @@
 [
-    {
+    const {createApp } = Vue
+    createApp {{ 
+        data(){
+            return {
+                url: 'https://api.sampleapis.com/recipes/recipes',
+                recipesAll:[],
+                recipes: [],
+                categorias: [],
+                productos: [],
+                precio: 30000,
+                producto: "All"
+                categoria: "All"
+       }
+    },
+    methods: {
+       fetchData(url) {
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              console.log(data)
+              this.recipes=data
+              this.recipesAll=data
+              this.cargarListasDesplegables()
+            })
+            .catch(error=>alert("Ups... se produjo un error: "+error))
+        },
+    
+    {           
         "id": 1,
         "producto": "Aceite reparador de puntas",
         "descripcion": "Preparado con una mezcla de aceite de semilla de uva y aceite de argán.",
