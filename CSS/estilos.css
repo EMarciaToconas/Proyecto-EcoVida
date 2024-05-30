@@ -462,7 +462,6 @@ header {
 
 /*clase contenedor*/
 .acercadenosotros {
-    padding-left: 3%;
     display: inline-flex;
     justify-content: space-between;
     align-content: center;
@@ -491,19 +490,18 @@ header {
 /*item2*/
 .logonosotros {
     position: relative;
+    text-align: center;
     width: 100%;
     padding-top: 2%;
-    margin-left: 10%;
 }
 
 .logonosotros img {
-    width: 80%;
+    width: 50%;
 }
 
 
 @media only screen and (max-width: 1000px) {
     .acercadenosotros {
-        padding-left: 3%;
         display: block;
         justify-content: space-between;
         align-content: center;
@@ -511,15 +509,16 @@ header {
     }
 
     .logonosotros img {
-        width: 50%;
+        width: 100%;
     }
 
     .logonosotros {
         position: relative;
-        align-content: center;
-        width: 100%;
-        padding-top: 2%;
+        text-align: center;
         margin-left: 25%;
+        align-content: center;
+        width: 50%;
+        padding-top: 2%;
     }
 }
 
@@ -757,7 +756,12 @@ footer{
     margin-top: 2%;
 }
 
+.titulof{
+    text-align: center;
+    color: #ffffff ;
+}
 .textof{
+    text-align: center;
     color: #ffffff;
 }
 
@@ -766,19 +770,22 @@ footer{
     color: #ffffff;
 }
 .logosf {
-    display: inline-flex;
+    display: block;
+    text-decoration: none;
     align-content: center;
     justify-content: center;
+    text-align: center;
     width: 100%;
-    margin-left: 5%;
+    margin:0%;
+    padding-bottom: 0%;
 }
 
 .logosf .imgin{
-    width: 30%;
+    width: 80px;
 }
 .logosf .imgpin{
-    width: 30%;
+    width: 80px;
 }
 .logosf .imgwpp{
-    width: 30%;
+    width: 80px;
 }
