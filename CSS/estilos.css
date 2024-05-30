@@ -5,12 +5,14 @@
 
 /*Estilos del Header*/
 header {
+    margin: 0px;
     background-color: #CBDDB5;
 }
 
 
 /*clase contenedor*/
 .navbar {
+    margin: 0px;
     background-color: #f7feef;
     color: white;
     padding: 10% 20%;
@@ -95,6 +97,7 @@ header {
 
 /*item4 menú*/
 .enlaces {
+    margin: 0px;
     width: 100%;
     background-color: #98b17a;
     text-align: center;
@@ -408,40 +411,41 @@ header {
 @media only screen and (max-width: 1000px) {
     .categorias-productos {
         width: 100%;
-        padding-left: 10%;
+        margin: 0px;
         display: flex;
-        justify-content: space-between;
-        align-content: space-between;
-        position: relative;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        position:relative;
+        flex-flow: row wrap;
     }
 
     .higiene-personal {
         position: relative;
-        width: 50%;
-        margin-bottom: 2%
+        width: 230px;
+        margin-bottom: 3%
     }
 
     .cuidado-de-la-piel {
         position: relative;
-        width: 50%;
-        margin-bottom: 2%;
+        width: 230px;
+        margin-bottom: 3%;
     }
 
     .cuidado-del-cabello {
         position: relative;
-        width: 50%;
-        margin-bottom: 2%;
+        width: 230px;
+        margin-bottom: 3%;
     }
 
     .decoracion {
         position: relative;
-        width: 50%;
+        width: 230px;
+        margin-bottom: 3%;
     }
 
     .limpieza-del-hogar {
         position: relative;
-        width: 50%;
+        width: 230px;
     }
 }
 
