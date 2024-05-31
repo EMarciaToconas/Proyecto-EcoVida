@@ -1,58 +1,5 @@
 [
-    const {createApp } = Vue
-    createApp {{ 
-        data(){
-            return {
-                url: 'https://api.sampleapis.com/recipes/recipes',
-                recipesAll:[],
-                recipes: [],
-                categorias: [],
-                productos: [],
-                precios: 30000,
-                producto: "All",
-                categoria: "All"
-       }
-    },
-    methods: {
-       fetchData(url) {
-          fetch(url)
-            .then(response => response.json())
-            .then(data => {
-              console.log(data)
-              this.recipes=data
-              this.recipesAll=data
-              this.cargarListasDesplegables()
-            })
-            .catch(error=>alert("Ups... se produjo un error: "+error))
-        },
-        filtro(){
-            this.recipes= this.recipesAll.filter (elemento => (
-            elemento.precios <= this.precios &&
-            elemento.precios!="")     &&
-            ((elemento.categoria == this.categoria || this.categoria==="All") && 
-       (elemento.course == this.producto || this.producto==="All" ))
-     },
-     orden() {
-       this.recipes.sort((a, b) => { return (a.title > b.title ? 1 : -1) } ) 
-     },
-     cargarListasDesplegables() {
-       this.categorias =[]
-       this.productos = []
-       for (elemento of this.recipesAll) {
-         if (elemento.categoria !== '' && this.categorias.indexOf(elemento.categoria) < 0) {
-           this.categorias.push(elemento.categoria)
-         }
-         if (elemento.course !== '' && this.productos.indexOf(elemento.course) < 0) {
-           this.productos.push(elemento.course)
-         }
-        }
-     }
-   },
-   created() {
-     this.fetchData(this.url)                                                       
-   }
- }).mount('#app')
-    {           
+        {           
         "id": 1,
         "producto": "Aceite reparador de puntas",
         "descripcion": "Preparado con una mezcla de aceite de semilla de uva y aceite de argán.",
