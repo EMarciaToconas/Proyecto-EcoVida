@@ -8,8 +8,8 @@
                 recipes: [],
                 categorias: [],
                 productos: [],
-                precio: 30000,
-                producto: "All"
+                precios: 30000,
+                producto: "All",
                 categoria: "All"
        }
     },
@@ -25,7 +25,33 @@
             })
             .catch(error=>alert("Ups... se produjo un error: "+error))
         },
-    
+        filtro(){
+            this.recipes= this.recipesAll.filter (elemento => (
+            elemento.precios <= this.precios &&
+            elemento.precios!="")     &&
+            ((elemento.categoria == this.categoria || this.categoria==="All") && 
+       (elemento.course == this.producto || this.producto==="All" ))
+     },
+     orden() {
+       this.recipes.sort((a, b) => { return (a.title > b.title ? 1 : -1) } ) 
+     },
+     cargarListasDesplegables() {
+       this.categorias =[]
+       this.productos = []
+       for (elemento of this.recipesAll) {
+         if (elemento.categoria !== '' && this.categorias.indexOf(elemento.categoria) < 0) {
+           this.categorias.push(elemento.categoria)
+         }
+         if (elemento.course !== '' && this.productos.indexOf(elemento.course) < 0) {
+           this.productos.push(elemento.course)
+         }
+        }
+     }
+   },
+   created() {
+     this.fetchData(this.url)                                                       
+   }
+ }).mount('#app')
     {           
         "id": 1,
         "producto": "Aceite reparador de puntas",
