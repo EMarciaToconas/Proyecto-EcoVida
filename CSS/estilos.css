@@ -688,19 +688,20 @@ input[type="submit"]:hover {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start
     
 }
 .card {
       
     border: 1px solid #dee2e6;
     border-radius: 10px;
-    width: 200px;
+    width: 230px;
     margin: 1%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #fff;
     overflow: hidden;
     transition: transform 0.3s;
+    height: 500px;
 }
 .card:hover {
     position: relative;
@@ -731,7 +732,8 @@ input[type="submit"]:hover {
     margin-bottom: 15px;
 }
 .price {
-    font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1.5em;
     color: #28a745;
     margin-bottom: 10px;
 }
