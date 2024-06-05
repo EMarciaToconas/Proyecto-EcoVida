@@ -1,31 +1,44 @@
-const { createApp } = Vue
+const { createApp } = Vue;
+
 createApp({
   data() {
     return {
       url: "ecovida.json",
       datos: [],
+      datosFiltrados: [],
       error: false,
-    }
+    };
   },
   methods: {
     fetchData(url) {
       fetch(url)
         .then(response => response.json())
-        .then(
-          data => {
-            console.log(data)
-            this.datos = data
-          }
-        )
+        .then(data => {
+          this.datos = data;
+          console.log(this.datos)
+          const categoria = this.getQueryParam('categoria');
+          console.log(categoria)
+          this.filtro(categoria);
+          console.log(this.datosFiltrados)
+          
+        })
         .catch(error => {
-          console.log("Error:" + error)
-          this.error = true
+          console.log("Error:" + error);
+          this.error = true;
         });
+    },
+
+    filtro(categoria) {
+      this.datosFiltrados = this.datos.filter(producto => producto.categoría === categoria);
+    },
+
+    getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
     }
-  },   
-created() {  // created() se ejecuta cada vez que se crea el objeto VUE
-  this.fetchData(this.url)
-}
-}).mount('#app')
+  },
 
-
+  created() {
+    this.fetchData(this.url);
+  }
+}).mount('#app');
