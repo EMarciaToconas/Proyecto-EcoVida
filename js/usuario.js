@@ -1,23 +1,19 @@
-const { createApp } = Vue
-  createApp({
+const { createApp } = Vue;
+
+createApp({
     data() {
-      return {
-        usuarios:[],
-        
-        url:'https://elidelgado075.pythonanywhere.com/usuarios',  
-        error:false,
-        cargando:true,
-        /*atributos para el guardar los valores del formulario */
-        id:0,
-        usuario:"", 
-        rol:"",
-        clave:"",
-        sortKey: "",
-        sortAsc: true
-
-    }  
+        return {
+            usuarios: [],
+            url: 'https://elidelgado075.pythonanywhere.com/usuarios',
+            error: false,
+            cargando: true,
+            usuario: "",
+            rol: "",
+            clave: "",
+            sortKey: "",
+            sortAsc: true
+        }
     },
-
 
     methods: {
         fetchData(url) {
@@ -25,37 +21,37 @@ const { createApp } = Vue
                 .then(response => response.json())
                 .then(data => {
                     this.usuarios = data;
-                    this.cargando=false
+                    this.cargando = false;
                 })
                 .catch(err => {
                     console.error(err);
-                    this.error=true              
-                })
+                    this.error = true;
+                });
         },
         eliminar(id) {
-            const url = this.url+'/' + id;
+            const url = `${this.url}/${id}`;
             var options = {
                 method: 'DELETE',
-            }
+            };
             fetch(url, options)
-                .then(res => res.text()) // or res.json()
+                .then(res => res.text())
                 .then(res => {
-			        alert('Registro Eliminado')
-                    location.reload(); // recarga el json luego de eliminado el registro
-                })
+                    alert('Registro Eliminado');
+                    location.reload();
+                });
         },
-        grabar(){
+        grabar() {
             let usuario = {
-                usuario:this.usuario,
+                usuario: this.usuario,
                 rol: this.rol,
                 clave: this.clave,
-            }
+            };
             var options = {
-                body:JSON.stringify(usuario),
+                body: JSON.stringify(usuario),
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 redirect: 'follow'
-            }
+            };
             fetch(this.url, options)
                 .then(response => {
                     if (response.status === 201) {
@@ -68,36 +64,16 @@ const { createApp } = Vue
                 })
                 .then(data => {
                     alert("Registro grabado");
-                    window.location.href = "./usuarios.html";
+                    // Redireccionar según el rol del usuario
+                    if (data.rol === '1') {
+                        window.location.href = "./productos.html"; // Redirige al administrador a productos.html
+                    } else {
+                        window.location.href = "./sesion.html"; // Redirige al usuario común a sesion.html
+                    }
                 })
                 .catch(err => {
                     alert(err.message);
-                });       
-        }
-    },
-    sesión(event) {
-        event.preventDefault();
-        clave=this.clave
-
-        var i=0
-            while ( i < this.usuarios.length && this.usuarios[i].clave != this.clave  ){
-                i++
-            }
-            if (i<(this.usuarios.length)){
-                if (this.usuarios[i].clave==this.clave){
-                    if (this.usuarios[i].rol=="1"){
-                        sessionStorage.setItem("rol", this.usuarios[i].rol)
-                        window.location.href = "./sesión.html";
-                    }else{
-                        alert('Error')
-                    }
-                                        
-                }else{
-                    alert('Error')
-                }
-            }else{
-                alert('Usuario erroneo')
-            }
+                });
         },
         sort(key) {
             if (this.sortKey === key) {
@@ -108,6 +84,7 @@ const { createApp } = Vue
             }
         }
     },
+
     computed: {
         sortedUsuarios() {
             return this.usuarios.slice().sort((a, b) => {
@@ -118,7 +95,8 @@ const { createApp } = Vue
             });
         }
     },
+
     created() {
-        this.fetchData(this.url)
-    },
-}).mount('#app')
+        this.fetchData(this.url);
+    }
+}).mount('#app');
