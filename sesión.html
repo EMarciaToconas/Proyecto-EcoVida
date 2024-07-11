@@ -24,21 +24,24 @@
         </div>
     </header>
     <main>
-        <div class="usuarioform">
+        <div class="usuarioform" id="app">
 
             <!-- Formulario de inicio de sesión -->
 
             <div class="iniciodesesion">
+                
                 <h2 id="titulo3">Inicio de sesión</h2>
-                <!-- <p id="pregunta">Si ya tienes una cuenta, puedes iniciar sesión aquí:</p> -->
+                <!--<p id="pregunta">Si ya tienes una cuenta, puedes iniciar sesión aquí:</p>--> 
                 <br>
-                <form id="inicioform">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre de Usuario" size="50">
+                <form id="inicioform" action="POST">
+                    <label for="usuario" name="usuario">Nombre de Usuario</label>
+                    <input type="text" name="usuario" id="usuario" v-model="usuario">
                     <br>
-                    <input type="text" name="clave" id="clave" placeholder="Contraseña" size="50">
+                    <label for="clave" name="clave">Contraseña</label>
+                    <input type="password" name="clave" id="clave" required v-model="clave">
                     <br>
-                    
-                    <input id="submit" type="submit" value="Iniciar Sesión">
+                    <div class="btn-login">
+                        <button type="submit" class="ingreso-login" v-on:click="login()">Iniciar Sesión</button>
                     <p id="pregunta">Si aún no tienes una cuenta, puedes registrarte <a href="registro.html">aquí:</a></p>
                 </form>
             </div>
@@ -50,6 +53,8 @@
         </div>
 
     </main>
+    <script src="usuario.js"></script>
+    <script src="sesiones.js"></script>
 
 </body>
 

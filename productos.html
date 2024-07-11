@@ -43,6 +43,7 @@
                                     <th scope="col">Precio</th>
                                     <th scope="col">Stock</th>
                                     <th scope="col">Categoría</th>
+                                    <th scope="col">Descripción</th>
                                     <th scope="col">Imagen</th>
                                     <th scope="col">Acciones</th>
                                 </tr>
@@ -54,6 +55,7 @@
                                     <td>{{producto.precio}}</td>
                                     <td>{{producto.stock}}</td>
                                     <td>{{producto.tipoProducto}}</td>
+                                    <td>{{producto.descripcion}}</td>
                                     <td>
                                         <div class="text-center">
                                             <img class="img-fluid" width="60" :src="producto.imagen"
@@ -117,7 +119,7 @@
                                         <input type="text" name="imagen" id="imagen" v-model="imagen"
                                             style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
                                         <img width="100" :src="imagen" alt="" style="margin-top: 10px; display: block;">
-                                    </div>
+                                    </div> 
 
                                 </form>
                             </div>

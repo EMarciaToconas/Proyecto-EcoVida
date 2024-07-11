@@ -1,20 +1,20 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    // Evitar el envío del formulario
+    //Evitar el envío del formulario
     event.preventDefault();
   
-    // Limpiar mensajes de error anteriores
+    //Limpiar mensajes de error anteriores
     document.getElementById('errorNombre').textContent = '';
     document.getElementById('errorApellido').textContent = '';
     document.getElementById('errorMail').textContent = '';
     document.getElementById('errorMensaje').textContent = '';
   
-    // Obtener valores de los campos
+    //Obtener valores de los campos
     let nombre = document.getElementById('nombre').value.trim();
     let apellido = document.getElementById('apellido').value.trim();
     let mail = document.getElementById('mail').value.trim();
     let mensaje = document.getElementById('mensaje').value.trim();
   
-    // Validar los campos
+    //Validar los campos
     let isValid = true;
   
     if (nombre === '') {
@@ -48,7 +48,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   });
   
   function validateEmail(email) {
-    // Expresión regular para validar e-mail
+    //Expresión regular para validar e-mail
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
   }
