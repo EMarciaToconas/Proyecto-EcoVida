@@ -660,6 +660,26 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
+.ingreso-login {
+    text-decoration: none;
+    text-align: center;
+    background-color: #98b17a;
+    color: white;
+    padding: 1%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1%;
+    width: 100%;
+}
+
+.ingreso-login:hover {
+    color: black;
+    background-color: #8acad2;
+    width: 100%;
+    margin: 1%;
+}
+
 
 #volver {
     text-decoration: none;
