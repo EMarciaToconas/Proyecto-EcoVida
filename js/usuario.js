@@ -8,11 +8,10 @@ createApp({
             error: false,
             cargando: true,
             usuario: "",
-            rol: "",
             clave: "",
             sortKey: "",
             sortAsc: true
-        }
+        };
     },
 
     methods: {
@@ -28,53 +27,33 @@ createApp({
                     this.error = true;
                 });
         },
-        eliminar(id) {
-            const url = `${this.url}/${id}`;
-            var options = {
-                method: 'DELETE',
-            };
-            fetch(url, options)
-                .then(res => res.text())
-                .then(res => {
-                    alert('Registro Eliminado');
-                    location.reload();
-                });
+
+        sesión(event) {
+            event.preventDefault();
+
+            // Obtener la clave como cadena
+            const clave = this.clave.toString();
+
+            // Buscar el usuario por nombre de usuario y clave
+            const usuarioEncontrado = this.usuarios.find(user => {
+                return user.usuario === this.usuario && user.clave.toString() === clave;
+            });
+
+            if (usuarioEncontrado) {
+                // Usuario encontrado, establecer rol en sessionStorage
+                sessionStorage.setItem("rol", usuarioEncontrado.rol.toString());
+
+                // Redirigir según el rol del usuario
+                if (usuarioEncontrado.rol.toString() === '1234') { // Administrador
+                    window.location.href = "./productos.html";
+                } else {
+                    alert('Error: No tiene acceso como administrador');
+                }
+            } else {
+                alert('Usuario o contraseña incorrectos');
+            }
         },
-        grabar() {
-            let usuario = {
-                usuario: this.usuario,
-                rol: this.rol,
-                clave: this.clave,
-            };
-            var options = {
-                body: JSON.stringify(usuario),
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                redirect: 'follow'
-            };
-            fetch(this.url, options)
-                .then(response => {
-                    if (response.status === 201) {
-                        return response.json();
-                    } else if (response.status === 409) {
-                        throw new Error("El usuario ya existe");
-                    } else {
-                        throw new Error("Error al crear usuario");
-                    }
-                })
-                .then(data => {
-                    alert("Registro grabado");
-                    // Redireccionar según el rol del usuario
-                    if (data.rol === '1') {
-                        window.location.href = "./productos.html"; // Redirige al administrador a productos.html
-                    } else {
-                        window.location.href = "./sesion.html"; // Redirige al usuario común a sesion.html
-                    }
-                })
-                .catch(err => {
-                    alert(err.message);
-                });
-        },
+
         sort(key) {
             if (this.sortKey === key) {
                 this.sortAsc = !this.sortAsc;
