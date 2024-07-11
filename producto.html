@@ -76,19 +76,24 @@
         <section>
             <div id="app">
                 <div class="container">
-                    <div v-for="elemento in datosFiltrados" :key="elemento.id" class="card">
-                        <img :src="elemento.foto" alt="Producto">
+                   <!-- <div v-for="elemento in datosFiltrados" :key="elemento.id" class="card"> -->
+                       <div class="" v-for="producto in productos">
+                    <img :src="elemento.imagen" alt="Producto">
                         <div class="card-body">
                             <div class="row">
-                                <h2 class="card-title">{{ elemento.producto }}</h2>
+                                <h2 class="card-title">{{producto.nombre}}</h2>
                                
                             </div>
                             <div class="row">
-                                <h3 class="card-category">{{ elemento.categoría }}</h3>
-                                <p class="card-text">{{ elemento.descripcion }}</p>
+                                <h3 class="card-category">{{producto.categoria}}</h3>
+                                <p class="card-text">{{ producto.descripcion }}</p>
                             </div>
                             <div class="row">
-                                <p class="price">${{ elemento.precio }}</p>
+                                <p class="price">${{ producto.precio }}</p>
+                            </div>
+
+                            <div class="row">
+                                <p class="price">${{ producto.stock }}</p>
                             </div>
                             
                         </div>

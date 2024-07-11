@@ -39,6 +39,16 @@
                 <input type="text" name="imagen" id="imagen" v-model="imagen" style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
                 <img width="100" :src="imagen" alt="" style="margin-top: 10px; display: block;">
             </div>
+
+            <div style="margin-bottom: 15px;">
+              <label style="display: block; margin-bottom: 5px;">Descripcion</label>
+              <input type="text" name="descripcion" id="descripcion" v-model="descripcion" style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+          </div>
+
+          <div style="margin-bottom: 15px;">
+            <label style="display: block; margin-bottom: 5px;">Categoria</label>
+            <input type="text" name="categoria" id="categoria" v-model="categoria " style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
         
             <button type="button" class="btn btn-success" v-on:click="grabar()" style="width: 100%; padding: 10px; font-size: 18px; border: none; border-radius: 4px; cursor: pointer;">Grabar</button>
         

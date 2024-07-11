@@ -10,8 +10,11 @@ const { createApp } = Vue
         imagen:"",
         stock:0,
         precio:0,
+        descripcion:"",
+        categoria:0,
+
        // url:'http://mcerda.pythonanywhere.com/productos/'+id,
-        url:'https://elidelgado075.pythonanywhere.com/productos'+id, 
+        url:'https://elidelgado075.pythonanywhere.com/productos/'+id, 
        }  
     },
     methods: {
@@ -24,7 +27,9 @@ const { createApp } = Vue
                     this.nombre = data.nombre;
                     this.imagen=data.imagen
                     this.stock=data.stock
-                    this.precio=data.precio                    
+                    this.precio=data.precio 
+                    this.descripcion=data.descripcion
+                    this.categoria=data.categoria
                 })
                 .catch(err => {
                     console.error(err);
@@ -36,8 +41,11 @@ const { createApp } = Vue
                 nombre:this.nombre,
                 precio: this.precio,
                 stock: this.stock,
-                imagen: this.imagen
+                imagen: this.imagen,
+                descripcion: this.descripcion,
+                categoria: this.categoria
             }
+            console.log("Datos del producto a modificar:", producto); // Registro de los datos
             var options = {
                 body: JSON.stringify(producto),
                 method: 'PUT',
@@ -58,4 +66,4 @@ const { createApp } = Vue
     created() {
         this.fetchData(this.url)
     },
-  }).mount('#app')
+  }).mount('#app') 	

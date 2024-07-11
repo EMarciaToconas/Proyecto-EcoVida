@@ -3,9 +3,8 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      url: "ecovida.json",
-      datos: [],
-      datosFiltrados: [],
+      url: "https://elidelgado075.pythonanywhere.com/productos",
+      producto: [],
       error: false,
     };
   },
@@ -14,7 +13,7 @@ createApp({
       fetch(url)
         .then(response => response.json())
         .then(data => {
-          this.datos = data;
+          this.productos = data;
           console.log(this.datos)
           const categoria = this.getQueryParam('categoria');
           console.log(categoria)
@@ -29,7 +28,7 @@ createApp({
     },
 
     filtro(categoria) {
-      this.datosFiltrados = this.datos.filter(producto => producto.categoría === categoria);
+      this.datosFiltrados = this.datos.filter(nombre => nombre.categoria === categoria);
     },
 
     getQueryParam(param) {

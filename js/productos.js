@@ -1,5 +1,5 @@
 const { createApp } = Vue
-  createApp({
+createApp({
     data() {
       return {
         productos:[],
@@ -14,16 +14,10 @@ const { createApp } = Vue
         imagen:"",
         stock:0,
         precio:0,
+        tipoProducto:0
 
     }  
     },
-
-
-
-
-
-
-
 
     methods: {
         fetchData(url) {
@@ -56,7 +50,9 @@ const { createApp } = Vue
                 precio: this.precio,
                 stock: this.stock,
                 tipoProducto: this.tipoProducto,
-                imagen:this.imagen
+                imagen:this.imagen,
+                descripcion:this.descripcion
+
             }
             var options = {
                 body:JSON.stringify(producto),

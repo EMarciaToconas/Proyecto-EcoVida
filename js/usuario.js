@@ -44,7 +44,7 @@ createApp({
                 sessionStorage.setItem("rol", usuarioEncontrado.rol.toString());
 
                 // Redirigir según el rol del usuario
-                if (usuarioEncontrado.rol.toString() === '1234') { // Administrador
+                if (usuarioEncontrado.rol.toString() === '1') { // Administrador
                     window.location.href = "./productos.html";
                 } else {
                     alert('Error: No tiene acceso como administrador');
