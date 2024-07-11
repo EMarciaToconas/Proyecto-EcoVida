@@ -115,6 +115,18 @@
                                     </div>
 
                                     <div style="margin-bottom: 15px;">
+                                        <label style="display: block; margin-bottom: 5px;">Categoría</label>
+                                        <select name="categoria" id="categoria" v-model="categoria"
+                                            style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+                                            <option value="opcion1">Higiene personal</option>
+                                            <option value="opcion2">Cuidado de la piel</option>
+                                            <option value="opcion3">Cuidado del cabello</option>
+                                            <option value="opcion3">Decoración para el hogar</option>
+                                            <option value="opcion3">Limpieza del hogar</option>
+                                        </select>
+                                    </div>
+
+                                    <div style="margin-bottom: 15px;">
                                         <label style="display: block; margin-bottom: 5px;">Imagen</label>
                                         <input type="text" name="imagen" id="imagen" v-model="imagen"
                                             style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
