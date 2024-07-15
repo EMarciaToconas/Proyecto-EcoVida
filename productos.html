@@ -54,7 +54,7 @@
                                     <td>{{producto.nombre}}</td>
                                     <td>{{producto.precio}}</td>
                                     <td>{{producto.stock}}</td>
-                                    <td>{{producto.tipoProducto}}</td>
+                                    <td>{{producto.tipoproducto}}</td>
                                     <td>{{producto.descripcion}}</td>
                                     <td>
                                         <div class="text-center">
@@ -116,6 +116,12 @@
 
                                     <div style="margin-bottom: 15px;">
                                         <label style="display: block; margin-bottom: 5px;">Categoría</label>
+                                        <input type="number" name="tipoproducto" id="tipoproducto" v-model="tipoproducto"
+                                            style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+                                    </div>
+
+                                   <!--  <div style="margin-bottom: 15px;">
+                                        <label style="display: block; margin-bottom: 5px;">Categoría</label>
                                         <select name="categoria" id="categoria" v-model="categoria"
                                             style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
                                             <option value="opcion1">Higiene personal</option>
@@ -124,7 +130,7 @@
                                             <option value="opcion3">Decoración para el hogar</option>
                                             <option value="opcion3">Limpieza del hogar</option>
                                         </select>
-                                    </div>
+                                    </div>-->
 
                                     <div style="margin-bottom: 15px;">
                                         <label style="display: block; margin-bottom: 5px;">Imagen</label>

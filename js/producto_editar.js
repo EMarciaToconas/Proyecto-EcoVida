@@ -12,8 +12,9 @@ const { createApp } = Vue
         precio:0,
         descripcion:"",
         categoria:0,
+        tipoproducto:0,
 
-       // url:'http://mcerda.pythonanywhere.com/productos/'+id,
+        //url:'https://mcerda.pythonanywhere.com/productos/'+id,
         url:'https://user91.pythonanywhere.com/productos'+id, 
        }  
     },
@@ -30,6 +31,7 @@ const { createApp } = Vue
                     this.precio=data.precio 
                     this.descripcion=data.descripcion
                     this.categoria=data.categoria
+                    this.tipoproducto=data.tipoproducto
                 })
                 .catch(err => {
                     console.error(err);
@@ -43,7 +45,8 @@ const { createApp } = Vue
                 stock: this.stock,
                 imagen: this.imagen,
                 descripcion: this.descripcion,
-                categoria: this.categoria
+                categoria: this.categoria,
+                tipoproducto: this.tipoproducto
             }
             console.log("Datos del producto a modificar:", producto); // Registro de los datos
             var options = {
