@@ -9,7 +9,7 @@
 
 
         // Lógica de autenticación
-        if (usuario === "admin" && clave === "5555") {
+        if (usuario === "admin" && clave === "1234") {
             sessionStorage.setItem("rol", "1");
         }
         else {

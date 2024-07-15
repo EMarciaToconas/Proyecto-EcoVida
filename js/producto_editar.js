@@ -14,7 +14,7 @@ const { createApp } = Vue
         categoria:0,
 
        // url:'http://mcerda.pythonanywhere.com/productos/'+id,
-        url:'https://elidelgado075.pythonanywhere.com/productos/'+id, 
+        url:'https://user91.pythonanywhere.com/productos'+id, 
        }  
     },
     methods: {
