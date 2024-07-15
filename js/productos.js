@@ -14,7 +14,7 @@ createApp({
         imagen:"",
         stock:0,
         precio:0,
-        tipoProducto:0
+        tipoproducto:0
 
     }  
     },
@@ -49,7 +49,7 @@ createApp({
                 nombre:this.nombre,
                 precio: this.precio,
                 stock: this.stock,
-                tipoProducto: this.tipoProducto,
+                tipoproducto: this.tipoproducto,
                 imagen:this.imagen,
                 descripcion:this.descripcion
 
