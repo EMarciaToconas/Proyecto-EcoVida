@@ -3,9 +3,10 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      //url: "https://user3416.pythonanywhere.com/productos",
-      url: "https://mcerda.pythonanywhere.com/productos",
-      producto: [],
+      url: "https://user912.pythonanywhere.com/productos",
+      //url: "https://mcerda.pythonanywhere.com/productos",
+      datos: [],
+      datosFiltrados: [],
       error: false,
     };
   },
@@ -14,11 +15,11 @@ createApp({
       fetch(url)
         .then(response => response.json())
         .then(data => {
-          this.productos = data;
+          this.datos = data;
           console.log(this.datos)
-          const categoria = this.getQueryParam('categoria');
-          console.log(categoria)
-          this.filtro(categoria);
+          const tipoproducto = this.getQueryParam('tipoproducto');
+          console.log(tipoproducto)
+          this.filtro(tipoproducto);
           console.log(this.datosFiltrados)
           
         })
@@ -29,7 +30,7 @@ createApp({
     },
 
     filtro(categoria) {
-      this.datosFiltrados = this.datos.filter(nombre => nombre.categoria === categoria);
+      this.datosFiltrados = this.datos.filter(nombre => nombre.tipoproducto === tipoproducto);
     },
 
     getQueryParam(param) {

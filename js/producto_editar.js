@@ -14,8 +14,8 @@ const { createApp } = Vue
         categoria:0,
         tipoproducto:0,
 
-        url:'https://mcerda.pythonanywhere.com/productos/'+id,
-        //url:'https://user91.pythonanywhere.com/productos'+id, 
+        //url:'https://mcerda.pythonanywhere.com/productos/'+id,
+        url:'https://user912.pythonanywhere.com/productos'+id, 
        }  
     },
     methods: {
@@ -25,7 +25,7 @@ const { createApp } = Vue
                 .then(data => {
                     console.log(data)
                     this.id=data.id
-                    this.nombre = data.nombre;
+                    this.nombre = data.nombre
                     this.imagen=data.imagen
                     this.stock=data.stock
                     this.precio=data.precio 
