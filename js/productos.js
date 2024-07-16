@@ -4,8 +4,8 @@ createApp({
       return {
         productos:[],
         
-        url:'https://user91.pythonanywhere.com/productos', 
-        //url:'https://mcerda.pythonanywhere.com/productos', 
+        //url:'https://user91.pythonanywhere.com/productos', 
+        url:'https://mcerda.pythonanywhere.com/productos', 
         error:false,
         cargando:true,
         /*atributos para el guardar los valores del formulario */

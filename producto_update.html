@@ -38,8 +38,17 @@
           </div>
           <div class="mb-3">
             <div class="mb-3">
-              <label style="display: block; margin-bottom: 5px;" for="descripcion">Categoria</label>
-              <input style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;" type="number" name="categoria" id="categoria" v-model="categoria">
+              <!-- <label style="display: block; margin-bottom: 5px;" for="descripcion">Categoria</label>
+              <input style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;" type="number" name="categoria" id="categoria" v-model="categoria"> -->
+              <label style="display: block; margin-bottom: 5px;">Categoría</label>
+                                        <select name="categoria" id="categoria" v-model="categoria"
+                                            style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+                                            <option value="1">Higiene personal</option>
+                                            <option value="2">Cuidado de la piel</option>
+                                            <option value="3">Cuidado del cabello</option>
+                                            <option value="4">Decoración para el hogar</option>
+                                            <option value="5">Limpieza del hogar</option>
+                                        </select>
             </div>
             <label style="display: block; margin-bottom: 5px;" for="imagen">Imagen</label>
             <input style="width: 100%; padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;" type="text" name="imagen" id="imagen" v-model="imagen">  
