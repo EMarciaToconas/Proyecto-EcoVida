@@ -3,6 +3,7 @@ createApp({
     data() {
       return {
         productos:[],
+        productosFiltrados:[],
         
         url:'https://user912.pythonanywhere.com/productos', 
         //url:'https://mcerda.pythonanywhere.com/productos', 
@@ -69,7 +70,18 @@ createApp({
                     console.error(err);
                     alert("Error al Guardar")  // puedo mostrar el error tambien
                 })      
-        }
+        },
+
+        filtro(tipoproducto) {
+            this.datosFiltrados = this.datos.filter(nombre => nombre.tipoproducto === tipoproducto);
+          },
+      
+          getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+          }
+
+        
     },
     created() {
         this.fetchData(this.url)

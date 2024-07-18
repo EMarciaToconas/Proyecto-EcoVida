@@ -29,7 +29,7 @@ createApp({
         });
     },
 
-    filtro(categoria) {
+    filtro(tipoproducto) {
       this.datosFiltrados = this.datos.filter(nombre => nombre.tipoproducto === tipoproducto);
     },
 

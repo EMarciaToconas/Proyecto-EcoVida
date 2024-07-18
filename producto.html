@@ -58,11 +58,12 @@
                 <div class="enlaces1">
                     <button class="categorias"><a href="#CATEG">Categorías</a></button>
                     <div class="categorias-content">
-                        <a href="producto.html?categoria=Higiene personal">Higiene personal</a>
-                        <a href="producto.html?categoria=Cuidado de la piel">Cuidado de la piel</a>
-                        <a href="producto.html?categoria=Cuidado del cabello">Cuidado del cabello</a>
-                        <a href="producto.html?categoria=Decoración">Decoración para el hogar</a>
-                        <a href="producto.html?categoria=Limpieza del hogar">Limpieza del hogar</a>
+                        <a href="tienda.html">Todos los Productos</a>
+                        <a href="producto.html?tipoproducto=Higiene personal">Higiene personal</a>
+                        <a href="producto.html?tipoproducto=Cuidado de la piel">Cuidado de la piel</a>
+                        <a href="producto.html?tipoproducto=Cuidado del cabello">Cuidado del cabello</a>
+                        <a href="producto.html?tipoproducto=Decoración para el hogar">Decoración para el hogar</a>
+                        <a href="producto.html?tipoproducto=Limpieza del hogar">Limpieza del hogar</a>
                     </div>
                 </div>
                 <a href="index.html#nosotros">Acerca de Nosotros</a>
@@ -76,24 +77,24 @@
         <section>
             <div id="app">
                 <div class="container">
-                   <!-- <div v-for="elemento in datosFiltrados" :key="elemento.id" class="card"> -->
-                       <div class="" v-for="producto in productos">
+                   <div v-for="elemento in datosFiltrados" :key="elemento.id" class="card"> 
+                       <!--<div class="" v-for="producto in datos">-->
                     <img :src="elemento.imagen" alt="Producto">
                         <div class="card-body">
                             <div class="row">
-                                <h2 class="card-title">{{producto.nombre}}</h2>
+                                <h2 class="card-title">{{elemento.nombre}}</h2>
                                
                             </div>
                             <div class="row">
-                                <h3 class="card-category">{{producto.categoria}}</h3>
-                                <p class="card-text">{{ producto.descripcion }}</p>
+                                <h3 class="card-category">{{elemento.tipoproducto}}</h3>
+                                <p class="card-text">{{ elemento.descripcion }}</p>
                             </div>
                             <div class="row">
-                                <p class="price">${{ producto.precio }}</p>
+                                <p class="price">${{ elemento.precio }}</p>
                             </div>
 
                             <div class="row">
-                                <p class="card-text">{{ producto.stock }}</p>
+                                <p class="card-text">{{ elemento.stock }}</p>
                             </div>
                             
                         </div>

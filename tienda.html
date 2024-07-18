@@ -59,11 +59,11 @@
                     <button class="categorias">Categorías</button>
                     <div class="categorias-content">
                         <a href="tienda.html">Todos los Productos</a>
-                        <a href="higieneper.html">Higiene personal</a>
-                        <a href="cuidadopiel.html">Cuidado de la piel</a>
-                        <a href="cuidadocabello.html">Cuidado del cabello</a>
-                        <a href="decohogar.html">Decoración para el hogar</a>
-                        <a href="limphogar.html">Limpieza del hogar</a>
+                        <a href="producto.html?tipoproducto=Higiene personal">Higiene personal</a>
+                        <a href="producto.html?tipoproducto=Cuidado de la piel">Cuidado de la piel</a>
+                        <a href="producto.html?tipoproducto=Cuidado del cabello">Cuidado del cabello</a>
+                        <a href="producto.html?tipoproducto=Decoración para el hogar">Decoración para el hogar</a>
+                        <a href="producto.html?tipoproducto=Limpieza del hogar">Limpieza del hogar</a>
                     </div>
                 </div>
                 <a href="index.html#nosotros">Acerca de Nosotros</a>
@@ -80,7 +80,8 @@
                     <div class="card h-100">
                         <img :src="producto.imagen" class="card-img-top" :alt="producto.nombre">
                         <div class="card-body">
-                            <h5 class="card-title">{{ producto.nombre }}</h5>
+                            <h4 class="card-title">{{ producto.nombre }}</h4>
+                            <h5 class="card-text" style="font-weight: bolder;">{{producto.tipoproducto}}</h5>
                             <p class="card-text">{{ producto.descripcion }}</p>
                             <p class="card-text">Precio: ${{ producto.precio }}</p>
                             <p class="card-text">Stock: {{ producto.stock }}</p>
